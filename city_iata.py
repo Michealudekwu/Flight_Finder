@@ -36,7 +36,9 @@ class FlightSearch:
                 print("API error:", response.text)
                 return None
 
-            iata = response.json()["data"]
+            response_data = response.json()
+            print(f"Response for {city}: {response_data}")
+            
             iata = response.json().get("data", [])
             if not iata or "iataCode" not in iata[0]:
                 print("No IATA code returned. Check API token or usage limits.")
