@@ -1,4 +1,5 @@
 import json
+import os
 from city_iata import FlightSearch
 from flight_data import FlightData
 
@@ -18,9 +19,12 @@ class Main:
         return flight_data
 
     def get_flight_data(self):
-        with open("flight_data.json") as data:
-            content = json.load(data)
-        return content
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        json_path = os.path.join(BASE_DIR, "flight_data.json")
+
+        with open(json_path, "r") as f:
+            flight_data = json.load(f)
+        return flight_data
     
     def pricing(self, contents, user_price):
         flight_info = []
