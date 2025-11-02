@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>Find Flight</title>
+</head>
+<body>
+    <div class="container">
+  <main>
+    <div class="py-5 text-center">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"/>
+    <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z"/>
+    <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"/>
+    <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"/>
+    </svg>
+      <h1 class="h2">Price form</h1>
+      <p class="lead">
+        Please fill out the form below to search for available flights.
+        Enter your travel details, dates, and preferences, then click <strong>Search</strong>
+        to find the best options for your trip.
+      </p>
+    </div>
+       <div class="row g-5 justify-content-center">
+          <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Pricing</h4>
+        {% if message %}
+          <div class="alert alert-warning">{{ message }}</div>
+        {% endif %}
+        
+        <form class="needs-validation" novalidate="" action="{{url_for('ui', username=user.username)}}" method="post">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" name="first_name" class="form-control" id="firstName" required="">
+              <div class="invalid-feedback">Valid first name is required.</div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" name="last_name" class="form-control" id="lastName" required="">
+              <div class="invalid-feedback">Valid last name is required.</div>
+            </div>
+
+            <div class="col-sm-6">
+            <label for="state" class="form-label">From Country</label>
+            <input class="form-control" name="from_country" list="states" id="state" placeholder="Enter or choose your country" required>
+            <datalist id="states">
+                <option value="London">
+                <option value="Texas">
+                <option value="New York">
+                <option value="Florida">
+                <option value="Paris">
+            </datalist>
+            <div class="invalid-feedback">Please provide a valid scountry.</div>
+            </div>
+
+            <div class="col-sm-6">
+            <label for="state" class="form-label">To Country</label>
+            <input class="form-control" name="to_country" list="states" id="state" placeholder="Enter or choose your desired Country" required>
+            <datalist id="states">
+                <option value="London">
+                <option value="Texas">
+                <option value="New York">
+                <option value="Florida">
+                <option value="Paris">
+            </datalist>
+            <div class="invalid-feedback">Please provide a valid country.</div>
+            </div>
+
+            <div class="col-md-6">
+            <label for="travelDate" class="form-label">Travel Date</label>
+            <input type="date" name="travel_date" class="form-control" id="travelDate" required>
+            <div class="invalid-feedback">
+                Please select a valid travel date.
+            </div>
+            </div>
+
+            <div class="col-md-6">
+            <label for="Depature" class="form-label">Depature Date</label>
+            <input type="date" name="depature_date" class="form-control" id="Depature" required>
+            <div class="invalid-feedback">
+                Please select a valid travel date.
+            </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="maxPrice" class="form-label">Maximum Price (£)</label>
+              <input type="number" name="max_price" class="form-control" id="maxPrice" min="50" step="10" placeholder="Enter max price">
+              {% if not price: %}
+              <div class="invalid-feedback">
+                Please enter a valid maximum price.
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="col-md-6">
+            <label class="form-label d-block mb-2">Nonstop Flight?</label>
+
+            <input type="radio" class="btn-check" name="nonstop" id="nonstop-yes" value="yes" required>
+            <label class="btn btn-outline-primary me-2" for="nonstop-yes">Yes</label>
+
+            <input type="radio" class="btn-check" name="nonstop" id="nonstop-no" value="no" required>
+            <label class="btn btn-outline-primary" for="nonstop-no">No</label>
+
+            {% if not nostop: %}
+            <div class="invalid-feedback d-block">
+                Please select if you want a nonstop flight or not.
+            </div>
+            </div>
+            {% endif %}
+
+          <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Search</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+  <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+    <p class="mb-1">© 2017–2025 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+</body>
+</html>
