@@ -1,17 +1,19 @@
 import requests
-from data_manager import DataManager
 import json
+import os
+from data_manager import DataManager
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+JSON_PATH = os.path.join(BASE_DIR, "flight_data.json")
+
 
 class FlightData:
     def __init__(self, token, name, stops):
         self.token = token
         self.name = name
-        self.stops = stops
-        self.nonstop_found = True 
-        if self.stops == "yes":
-            self.stops = "true"
-        elif self.stops == "no":
-            self.stops = "false"
+        self.stops = "true" if stops == "yes" else "false"
+        self.nonstop_found = True
+        self.flight_info = []
 
         self.find_cheapest_flight()
 
@@ -23,31 +25,26 @@ class FlightData:
         end_str = data.arrival_date
 
         FLIGHT_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
+        headers = {"Authorization": f"Bearer {self.token}"}
 
-        headers = {
-            "Authorization": f"Bearer {self.token}"
-        }
-        
         try:
-            # print(f"Getting flights with {self.stops}")
-            response = self.response(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, self.stops)
-            self.step_over(response)
-
+            response = self.call_api(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, self.stops)
+            self.process_response(response)
         except ValueError as error:
             if self.stops == "true":
                 self.nonstop_found = False
-            print(f"Getting flights from {from_iata.upper()}...TO...{to_iata.upper()}\nNO DIRECT FLIGHTS FOUND: {error}")
+            print(f"No direct flights found: {error}")
             try:
-                if self.stops == "false":
-                    response = self.response(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, "true")
-                else:
-                    response = self.response(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, "false")
-                self.step_over(response)
+                alt_stops = "false" if self.stops == "true" else "true"
+                response = self.call_api(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, alt_stops)
+                self.process_response(response)
             except ValueError as error:
-                print(f"Still no flights found from {from_iata.upper()}...TO...{to_iata.upper()}. Reason: {error}")
+                print(f"Still no flights found: {error}")
 
-    def response(self, to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT,headers,stops):
-        parameters = {
+        self.save_to_json()
+
+    def call_api(self, to_iata, from_iata, start_str, end_str, endpoint, headers, stops):
+        params = {
             "originLocationCode": from_iata,
             "destinationLocationCode": to_iata,
             "departureDate": start_str,
@@ -57,58 +54,45 @@ class FlightData:
             "currencyCode": "USD"
         }
 
-        for params, value in parameters.items():
-            print(f"{params} : {value}")
-
-        response = requests.get(url=FLIGHT_ENDPOINT, params=parameters, headers=headers)
+        response = requests.get(url=endpoint, params=params, headers=headers)
 
         if response.status_code != 200:
-            print("API ERROR RESPONSE:", response.text)
-            raise ValueError(f"API error: {response.status_code} - {response.text}")
+            raise ValueError(f"API error {response.status_code}: {response.text}")
 
         data = response.json().get("data", [])
-
         if not data:
-            raise ValueError("No flight data returned.")
+            raise ValueError("No flight data returned from API.")
 
         return data
 
-    def step_over(self, req):
-        flight_info = []
-
-        for ind,flight in enumerate(req):
-            data = {
-                "id" : ind,
-                "price" : "",
-                "segments" : "",
-                "airport_codes": [] 
+    def process_response(self, flights):
+        for ind, flight in enumerate(flights):
+            flight_data = {
+                "id": ind,
+                "price": flight.get("price", {}).get("total", "N/A"),
+                "segments": [],
+                "airport_codes": []
             }
-            data["price"] = flight["price"]["total"]
 
-            segments = flight["itineraries"][0]["segments"]
-            for segs in segments:
-                ports = {
-                    "departure_airport_code" : "",
-                    "inbound_date" : "",
-                    "inbound_time" : "",
-                    "arrival_airport_code" : "",
-                    "outbound_date" : "",
-                    "outbound_time" : "",
-                    "planes" : ""
+            segments = flight.get("itineraries", [{}])[0].get("segments", [])
+            for seg in segments:
+                seg_info = {
+                    "planes": f"{seg.get('carrierCode', '')}{seg.get('number', '')}",
+                    "departure_airport_code": seg.get("departure", {}).get("iataCode", ""),
+                    "outbound_date": seg.get("departure", {}).get("at", "").split("T")[0] if "at" in seg.get("departure", {}) else "",
+                    "outbound_time": seg.get("departure", {}).get("at", "").split("T")[1] if "at" in seg.get("departure", {}) else "",
+                    "arrival_airport_code": seg.get("arrival", {}).get("iataCode", ""),
+                    "inbound_date": seg.get("arrival", {}).get("at", "").split("T")[0] if "at" in seg.get("arrival", {}) else "",
+                    "inbound_time": seg.get("arrival", {}).get("at", "").split("T")[1] if "at" in seg.get("arrival", {}) else ""
                 }
-                ports["planes"] = f"{segs['carrierCode']+segs['number']}"
-                ports["departure_airport_code"] = segs["departure"]["iataCode"]
-                ports["outbound_date"] = segs["departure"]["at"].split("T")[0]
-                ports["outbound_time"] = segs["departure"]["at"].split("T")[1]
+                flight_data["airport_codes"].append(seg_info)
 
-                ports["arrival_airport_code"] = segs["arrival"]["iataCode"]
-                ports["inbound_date"] = segs["arrival"]["at"].split("T")[0]
-                ports["inbound_time"] = segs["arrival"]["at"].split("T")[1]
+            self.flight_info.append(flight_data)
 
-                data["airport_codes"].append(ports)
-            
-            flight_info.append(data)
-
-
-        with open("flight_data.json", "w") as file:
-            json.dump(flight_info, file, indent=4)
+    def save_to_json(self):
+        try:
+            with open(JSON_PATH, "w") as file:
+                json.dump(self.flight_info, file, indent=4)
+            print(f"Flight data saved to {JSON_PATH}")
+        except Exception as e:
+            print(f"Error saving flight data: {e}")
