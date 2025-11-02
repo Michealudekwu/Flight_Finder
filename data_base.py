@@ -37,4 +37,7 @@ class User_info(db.Model):
     def __repr__(self):
         return f"<User_info {self.first_name} {self.last_name}>"
         
+with app.app_context():
+    db.create_all()
+    
 import server
