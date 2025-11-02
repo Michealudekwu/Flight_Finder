@@ -34,6 +34,7 @@ class FlightData:
             if self.stops == "true":
                 self.nonstop_found = False
             print(f"No direct flights found: {error}")
+            # fallback search
             try:
                 alt_stops = "false" if self.stops == "true" else "true"
                 response = self.call_api(to_iata, from_iata, start_str, end_str, FLIGHT_ENDPOINT, headers, alt_stops)
@@ -41,6 +42,7 @@ class FlightData:
             except ValueError as error:
                 print(f"Still no flights found: {error}")
 
+        # Save results to JSON safely
         self.save_to_json()
 
     def call_api(self, to_iata, from_iata, start_str, end_str, endpoint, headers, stops):
