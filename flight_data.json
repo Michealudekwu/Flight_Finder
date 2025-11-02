@@ -1,0 +1,1074 @@
+[
+    {
+        "id": 0,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5671",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5687",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5671",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5687",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6945",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6949",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6945",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "price": "187.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6949",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "price": "193.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6945",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "price": "193.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY6949",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "price": "196.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "price": "196.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5671",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:30:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "10:50:00"
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "price": "196.60",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5687",
+                "departure_airport_code": "LGW",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:25:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:45:00"
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1381",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "06:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "08:40:00"
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1335",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "08:55:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:15:00"
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1781",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "14:45:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:05:00"
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1281",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "17:35:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "19:55:00"
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1181",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "19:20:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "21:40:00"
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "price": "200.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1581",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "11:30:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "13:50:00"
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "price": "200.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5473",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "price": "200.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5473",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "price": "200.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY8961",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "price": "200.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY8961",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "price": "205.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "price": "205.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "price": "205.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "price": "205.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "price": "205.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "price": "206.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "VY8961",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "price": "209.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "price": "209.30",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "AF1681",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "09:00:00",
+                "arrival_airport_code": "CDG",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "11:25:00"
+            }
+        ]
+    },
+    {
+        "id": 66,
+        "price": "210.40",
+        "segments": [],
+        "airport_codes": [
+            {
+                "planes": "IB5473",
+                "departure_airport_code": "LHR",
+                "outbound_date": "2025-11-03",
+                "outbound_time": "15:15:00",
+                "arrival_airport_code": "ORY",
+                "inbound_date": "2025-11-03",
+                "inbound_time": "17:45:00"
+            }
+        ]
+    }
+]
