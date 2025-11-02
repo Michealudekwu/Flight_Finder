@@ -36,3 +36,5 @@ class User_info(db.Model):
 
     def __repr__(self):
         return f"<User_info {self.first_name} {self.last_name}>"
+        
+import server
